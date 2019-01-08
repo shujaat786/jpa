@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class IntroController {
 
     @GetMapping("/intro/{id}")
-    String getIntro(@PathVariable String id){
+    public String getIntro(@PathVariable String id){
         return "Hello" + " " + id;
     }
 
@@ -28,4 +28,7 @@ public class IntroController {
         response.setHeaderModel(fetchDetails.getHeaderModel());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+
+
 }
