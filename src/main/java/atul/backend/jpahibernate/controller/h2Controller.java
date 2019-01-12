@@ -2,7 +2,7 @@ package atul.backend.jpahibernate.controller;
 
 import atul.backend.jpahibernate.model.Response;
 import atul.backend.jpahibernate.model_h2.UserDetailsH2;
-import atul.backend.jpahibernate.service.h2RequestsService;
+import atul.backend.jpahibernate.service_h2.h2RequestsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

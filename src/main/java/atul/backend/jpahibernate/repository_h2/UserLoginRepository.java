@@ -11,4 +11,6 @@ public interface UserLoginRepository extends JPAHibernateRepository<UserLogin, I
 
     @Query(value = "select * from USERLOGIN  ul where ul.firstname = ?1", nativeQuery = true)
     List<UserLogin> findAllUsers(String id);
+
+    UserLogin findByUsername(String username);
 }

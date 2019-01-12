@@ -1,11 +1,11 @@
 package atul.backend.jpahibernate.model_h2;
 
+import atul.backend.jpahibernate.entities_h2.UserLogin;
+
 public class UserDetailsH2 {
 
     private int id;
     private String firstName;
-    private String lastName;
-    private String email;
 
     public int getId() {
         return id;
@@ -31,11 +31,41 @@ public class UserDetailsH2 {
         this.lastName = lastName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUsername() {
+        return username;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUsername(String username) {
+        this.username = username;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    private String lastName;
+    private String username;
+    private String password;
+    private int age;
+    private int salary;
 }
